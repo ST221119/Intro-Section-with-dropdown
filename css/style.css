@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Epilogue', sans-serif;
+    color:hsl(0, 0%, 41%);
+}
+
+body{
+    background-color: hsl(0, 0%, 98%);
+    padding: 15px 35px;
+    height: 100vh;
+    font-size: 14px;
+    transition: background-color .5s;
+}
+
+header .nav, header .nav-mobile{
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.website-logo img, .website-logo-mobile img{
+    vertical-align: middle;
+}
+
+.profile .login .button, .profile .register .button, .profile-mobile .login .button, .profile-mobile .register .button{
+    padding: 10px 20px;
+    border: none;
+    background: none;
+}
+
+.profile .login .button:hover, .profile-mobile .login .button:hover{
+    cursor: pointer;
+    color: hsl(0, 0%, 8%);
+}
+
+.profile .register .button, .profile-mobile .register .button{
+    border: 2px solid hsl(0, 0%, 41%);
+    border-radius: 10px;
+}
+
+.profile .register .button:hover, .profile-mobile .register .button:hover{
+    border: 2px solid hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 8%);
+    cursor: pointer;
+}
+
+.heading .btn, .heading-section-mobile .btn{
+    background-color: hsl(0, 0%, 8%);
+    border: 1px solid hsl(0, 0%, 8%);
+    color: #fff;
+    font-weight: 700;
+    padding: 15px 30px;
+    border-radius: 10px;
+    margin: 10px 30px 50px 60px;
+}
+
+.heading .btn:hover, .heading-section-mobile .btn:hover{
+    background-color: #fff;
+    color: black;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+#para2::before, #para2::after, #para2-mobile::before, #para2-mobile::after{
+    content: "\a";
+    white-space: pre;
+}
+
+/* CSS For 1440px screen size */
+
+.website-logo{
+    width: 10%;
+}
+
+.navigation-bar{
+    width: 75%;
+    display: flex;
+}
+
+.navigation-bar .nav-items{
+    padding: 10px 20px;
+}
+
+.nav-items a, .login a , .register a, .heading .btn a{
+    text-decoration: none;
+}
+
+.profile{
+    display: flex;
+}
+
+.top-container{
+    max-width: 1142px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-container .content .heading{
+    padding-top: 30px;
+}
+
+.heading h1{
+    font-size: 68px;
+    font-weight: 700;
+    color: hsl(0, 0%, 8%);
+    margin: 60px 30px 30px 60px;
+}
+
+.top-container .content, .top-container .banner-image{
+    width: 50%;
+}
+
+.top-container .banner-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-container .banner-image img{
+    width: 70%;
+    padding-bottom: 65px;
+}
+
+.heading p{
+    margin: 20px 30px 30px 60px;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.content .companies-logo{
+    margin: 20px 20px 30px 60px;
+    display: inline-block;
+}
+
+.content .companies-logo img{
+    vertical-align: middle;
+    margin-right: 25px;
+}
+
+.content .companies-logo .first-img{
+    width: 20%;   
+}
+
+.content .companies-logo .second-img{
+    width: 13%; 
+}
+
+.content .companies-logo .third-img{
+    width: 15%;   
+}
+
+.content .companies-logo .fourth-img{
+    width: 20%;
+}
+
+.features, .company{
+    position: relative;
+    cursor: pointer;
+}
+
+.features:hover, .company:hover, .features-mobile:hover, .company-mobile:hover{
+    color: hsl(0, 0%, 8%);
+}
+
+.dropdown, .dropdown-company{
+    position: absolute;
+    top: 32px;
+    background-color: #fff;
+    font-size: 13px;
+    padding: 12px 20px 3px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 15px;
+    display: none;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+.dropdown{
+    left: -32px;
+}
+
+.dropdown-company{
+    left: 12px;
+}
+
+.dropdown-list ul li{
+    list-style-type: none;
+    padding-right: 15px;
+    margin-bottom: 6px;
+}
+
+.list a{
+    display: block;
+    margin: 4px 0 12px;
+}
+
+/* Toggle classes for Javascript for screen sizes 1440px and 768px*/
+
+.active{
+    display: flex;
+}
+
+.hide{
+    display: none;
+}
+
+.hidden, .invisible{
+    display: none;
+}
+
+.visible{
+    display:inline-block;
+}
+
+.showcase{
+    display: inline-block;
+}
+
+/* Media Query for screen size upto 768px */
+
+@media (max-width: 768px){
+
+    body{
+        padding: 15px 20px;
+    }
+
+    .website-logo img{
+        max-width: 100%;
+    }
+
+    .navigation-bar .nav-items{
+        padding: 10px 0 10px 25px;
+    }
+
+    .profile .login .button, .profile .register .button{
+        padding: 8px 16px;
+    }
+
+    .heading h1{
+        font-size: 46px;
+        margin: 50px 10px 30px 50px;
+    }
+
+    .heading p {
+        margin: 20px 10px 30px 50px;
+        line-height: 1.6;
+        font-size: 14px;
+    }
+
+    #para2::before, #para2::after{
+        content: none;
+    }
+    
+    .heading .btn {
+        margin: 10px 30px 50px 50px;
+    }
+
+    .top-container .banner-image img {
+        width: 80%;
+        padding-bottom: 0;
+    }
+
+    .content .companies-logo .first-img {
+        width: 25%;
+    }
+
+    .content .companies-logo .second-img {
+        width: 16%;
+    }
+
+    .content .companies-logo .third-img {
+        width: 19%;
+    }
+
+    .content .companies-logo .fourth-img {
+        width: 20%;
+    }
+
+    .content .companies-logo img {
+        margin-right: 10px;
+    }
+}
+
+@media (min-width: 376px){
+    
+    #header .nav-mobile, main .top-container-mobile{
+        display: none;
+    }
+}
+
+/* Media query for screen size 375px */
+
+@media (max-width: 375px){
+    body{
+        padding: 0;
+    }
+    
+    header .nav, div.top-container{
+        display: none;
+    }
+    
+    header .nav-mobile{
+        margin: 15px 35px;
+    }
+
+    .hamburger-icon div{
+        width: 25px;
+        height: 3px;
+        background-color: black;
+        margin: 3px 0;
+    }
+    
+    .banner-image-mobile img{
+        width: 100%;
+    }
+
+    .heading-section-mobile{
+        text-align: center;
+        margin: 30px auto;
+    }
+
+    .heading-section-mobile h1{
+        font-size: 35px;
+        word-spacing: 1px;
+        color: hsl(0, 0%, 8%);
+        margin-bottom: 20px;
+    }
+
+    .heading-section-mobile p{
+        line-height: 1.5;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .heading-section-mobile .btn{
+        margin: 20px auto 40px;
+    }
+
+    .companies-logo-mobile{
+        padding-bottom: 70px;
+    }
+
+    .companies-logo-mobile img{
+        padding: 0 10px;
+        vertical-align: middle;
+    }
+
+    .companies-logo-mobile .first-img{
+        width: 25%;   
+    }
+    
+    .companies-logo-mobile .second-img{
+        width: 18%; 
+    }
+    
+    .companies-logo-mobile .third-img{
+        width: 20%;   
+    }
+    
+    .companies-logo-mobile .fourth-img{
+        width: 20%;
+    }
+
+    .side-nav{
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: #fff;
+        transition: 0.5s;
+        padding-top: 40px;
+        overflow: hidden;
+    }
+
+    .close-btn{
+        position: absolute;
+        top: 20px;
+        right: 35px;
+    }
+
+    .nav-items-mobile, .profile-mobile{
+        margin: 20px 20px;
+    }
+
+    .nav-items-mobile .features-mobile, .nav-items-mobile .company-mobile, .nav-items-mobile .career-mobile, .nav-items-mobile .about-mobile{
+        padding: 5px 5px 20px;
+        font-weight: 700;
+    }
+
+    .nav-items-mobile .features-mobile{
+        position: relative;
+    }
+
+    .dropdown-mobile, .dropdown-company-mobile{
+        position: sticky;
+        top: 10px;
+        background-color: #fff;
+        font-size: 13px;
+        padding: 30px 20px 0;
+        border-radius: 15px;
+        display: none;
+        flex-direction: row;
+        cursor: pointer;
+    }
+    
+    .dropdown-mobile{
+        left: 20px;
+    }
+    
+    .dropdown-company-mobile{
+        left: 12px;
+    }
+    
+    .dropdown-list-mobile ul li{
+        list-style-type: none;
+        padding-right: 15px;
+        margin-bottom: 12px;
+    }
+
+    .list-mobile a{
+        text-decoration: none;
+        display: block;
+        margin: 4px 0 18px;
+    }
+
+    .features-arrow-down, .company-arrow-down{
+        margin-left: 10px;
+    }
+
+    .features-arrow-down-hide, .company-arrow-down-hide{
+        display: none;
+    }
+
+    .features-arrow-up, .company-arrow-up{
+        display: none;
+    }
+
+    .features-arrow-up-show, .company-arrow-up-show{
+        display: inline-block;
+        margin-left: 10px;
+    }
+
+    .profile-mobile{
+        text-align: center;
+    }
+
+    .profile-mobile .register .button{
+        margin-top: 5px;
+        width: 100%;
+    }
+
+    .dropdown-mobile-show, .dropdown-company-mobile-show{
+        display: flex;
+    }
+}
